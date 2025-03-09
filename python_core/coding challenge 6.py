@@ -62,15 +62,35 @@ for i in range(n):
 #***
 #**
 #*
+'''
+n = 6
+for i in range(n):
+    for j in range(i):
+        print("*",end="")
 
+    print()
 
+for i in range(n):
+    for j in range(i,n):
+        print("*",end ="")
 
+    print()'''
+     
 #PATTERN (1.2)
 #1
 #2 3
 #4 5 6
 #7 8 9 10
+'''
+n = 5
+num = 1
+for i in range(n):
+    for j in range(i):
+        print(num,end = " ")
+        num+=1
+    print()
 
+'''
 
 #PATTERN(1.3)
 #     *
@@ -78,6 +98,16 @@ for i in range(n):
 #   * * *
 #  * * * *
 # * * * * *
+'''
+n = 5
+for i in range(n):
+    for j in range(n - i - 1):  # Print spaces to align the stars
+        print(" ", end="")
+
+    for k in range(i + 1):  # Print left-side stars
+        print("*", end=" ")
+
+    print() '''
 
 #PATTERN (1.4)
 # 6
@@ -86,7 +116,15 @@ for i in range(n):
 # 3456
 # 23456
 # 123456
-
+'''
+n=7
+for i in range(n):
+    num = 6 - 1 * i
+    for j in range(i):
+        num+=1
+        print(num,end="")
+    print()
+        '''
 
 #20.Write a Program to print the multiplication table.
 '''
@@ -111,7 +149,7 @@ print(f"Factorial of {n} :{fact}")
 
 '''
 #22. Write a Program to Check Whether a Number is Prime or Not.
-
+'''
 n = int(input("Enter the number to check if prime : "))
 flag = 0
 if n==0 or n==1:
@@ -125,8 +163,7 @@ if n>0:
     else :
         print("prime")
 
-
-
+'''
 
 
 
@@ -136,3 +173,11 @@ if n>0:
 # 579
 # 79
 # 9
+n = 5
+for i in range(n):
+    num = 1 + 2 * i
+    for j in range(i,n):
+        print(num,end = "")
+        num+=2
+    print()
+    
