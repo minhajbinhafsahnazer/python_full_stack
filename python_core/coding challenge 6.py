@@ -102,17 +102,28 @@ for i in range(n):
 #21. How to find the factorial of number 5.
  
  #iteration method
-
+'''
 n = int(input("Enter the number to find the factorial : "))
 fact = 1
 for i in range(1,n+1):
     fact*=i
 print(f"Factorial of {n} :{fact}")
 
-
+'''
 #22. Write a Program to Check Whether a Number is Prime or Not.
 
-
+n = int(input("Enter the number to check if prime : "))
+flag = 0
+if n==0 or n==1:
+        print("not prime")
+if n>0:
+    for i in range(2, int(n**0.5 + 1)):
+        if n%i == 0:
+            flag = 1
+    if flag == 1:
+        print("not prime")
+    else :
+        print("prime")
 
 
 
