@@ -1,130 +1,219 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            LISTS
-        </title>
-        <style>
-            
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>  LISTS  </title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
-        
-        <form background-color : green>
-
-        <label>FIRST NAME</label>
-        <input type="text" >
-        <br>
-
-        <label>LAST NAME</label>
-        <input type="text" >
-
-        <br>
-
-        <label>DATE OF BIRTH</label>
-        <input type="date,month,year">
-        <BR>
-
-        <label>EMAIL ID</label>
-        <input type="email">
-
-        <br>
-
-        <label>MOBILE NUMBER</label>
-        <input type="number">
-
-        <br>
-        
-        <label>GENDER</label>
-        <input type="radio" name="r" value="male">M
-        <input type="radio" name="r" value="female">F
-
-        <br>
-
-        <label>ADDRESS</label>
-        <input type="text" width="200" height="100">
-
-        <br>
-
-        <label>CITY</label>
-        <input type="text" >
-
-        <br>
-
-        <label>PIN CODE</label>
-        <input type="number" >
-
-        <br>
-
-        <label>STATE</label>
-        <input type="text" >
-
-        <br>
-
-        <label for="country">COUNTRY</label>
-        <select id="country" name="country">
-            <option value="india">INDIA</option>
-            <option value="uae">UAE</option>
-            <option value="usa">USA</option>
-            <option value="china">CHINA</option>
-        </select>
-
-        <br>
-
-        <label for="hobby1">HOBBIES</label>
-
-        <label for="hobby1">Drawing</label>
-        <input type="checkbox" id="hobby1" name="hobbies" value="Drawing">
-
-        <label for="hobby2">Singing</label>
-        <input type="checkbox" id="hobby2" name="hobbies" value="Singing">
-        
-        <label for="hobby3">Dancing</label>
-        <input type="checkbox" id="hobby3" name="hobbies" value="Dancing">
-        
-        <label for="hobby4">Sketching</label>
-        <input type="checkbox" id="hobby4" name="hobbies" value="Sketching">
-        <br>
-        
-        <label for="hobby5">Others</label>
-        <input type="checkbox" id="hobby5" name="hobbies" value="Others">
-
-        <input type="text" width = "100">
-
-        <br>
-
-        <label>QUALIFICATION</label>
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-
-        <br>
-
-        <label>COURSES APPLIED FOR</label>
-        <input type="radio" value="Php">Php
-        <input type="radio" value="Python">Python
-        <input type="radio" value="Java">Java
-        <input type="radio" value="Digital Marketing">Digital Marketing
-        <br>
-        <br>
-
-        <input type="submit" value="Submit">
-        <input type="reset"  value="reset" >
+    <body style = "background-color: #153c4a;">
+        <div class="form-group">
+        <form>
+            <table>
+                    <tr>
+                        <div class="form-field">
+                        <label>FIRST NAME</label>
+                        <input  type="text" >
+                        </div>
+                       
+                    </tr>
 
 
+                    <br>
+                        <tr>
+                        <div class="form-field">
+                        <label>LAST NAME</label>
+                        <input type="text" >
+                        </div>
+                    </tr>
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">    
+                        <label>DATE OF BIRTH</label>
+                        <input type="date,month,year">
+                        </div>
+                    </tr>
+
+
+                    <br>
+
+
+                    <tr>
+                        <div class="form-field">
+                        <label>EMAIL ID</label>
+                        <input type="email">
+                        </div>
+                    </tr>
+
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">
+                        <label>MOBILE NUMBER</label>
+                        <input type="number">
+                        </div>
+                    </tr>
+                
+
+
+                    <br>
+                    <tr>
+                        <div class="form-field">
+                        <label>GENDER</label>
+                        <div class="radio-group">
+                        <input type="radio" name="r" value="male">M
+                        <input type="radio" name="r" value="female">F
+                        </div>
+                        </div>
+                    </tr>
+                
+
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">
+                        <label>ADDRESS</label>
+                        <input type="text" width="200" height="100">
+                        </div>
+                    </tr>
+
+
+                    <br>
+
+                    <div class="form-field">
+                    <label>CITY</label>
+                    <input type="text" >
+                    </div>
+
+
+                    <br>
+                    <tr>
+                        <div class="form-field">
+                        <label>PIN CODE</label>
+                        <input type="number" >
+                            </div>
+                    </tr>
+
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">
+                        <label>STATE</label>
+                        <input type="text" >
+                        </div>
+                    </tr>
+
+
+                    <br>
+                    
+                    <tr>
+                        <div class="form-field">
+                        <label for="country">COUNTRY</label>
+                        <select id="country" name="country">
+                            <option value="india">INDIA</option>
+                            <option value="uae">UAE</option>
+                            <option value="usa">USA</option>
+                            <option value="china">CHINA</option>
+                        </select>
+                        </div>
+                    </tr>
+
+
+                    <br>
+                    
+
+                    <tr>
+                        <div class="form-field">
+                        <label for="hobby1">HOBBIES</label>
+
+                        <div class="subhobies">
+                        <label for="hobby1">Drawing</label>
+                        <input type="checkbox" id="hobby1" name="hobbies" value="Drawing">
+
+                        <label for="hobby2">Singing</label>
+                        <input type="checkbox" id="hobby2" name="hobbies" value="Singing">
+                        
+                        <label for="hobby3">Dancing</label>
+                        <input type="checkbox" id="hobby3" name="hobbies" value="Dancing">
+                        
+                        <label for="hobby4">Sketching</label>
+                        <input type="checkbox" id="hobby4" name="hobbies" value="Sketching">
+                    
+                        <br>
+
+                        <label for="hobby5">Others</label>
+                        <input type="checkbox" id="hobby5" name="hobbies" value="Others">
+
+                        <input type="text" width = "100">
+                        </div>
+                        </div>
+                    </tr>
+                   
+
+
+                    <br>
+
+                    <table>
+
+                        <tr>
+                            <td colspan="2"><label>Qualifications</label></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <table border=2px >
+                                    <tr>
+                                        <th>Sl.No.</th>
+                                        <th>Examination</th>
+                                        <th>Board</th>
+                                        <th>Percentage</th>
+                                        <th>Year of Passing</th>
+                                    </tr>
+                                    <tr><td>1</td><td>Class X</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                    <tr><td>2</td><td>Class XII</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                    <tr><td>3</td><td>Graduation</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                    <tr><td>4</td><td>Masters</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                 </table>
+
+                               
+                            </td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <div class="form-field">
+                    <label class="dd">COURSES APPLIED FOR</label>
+
+                    <div class="radio-group">
+                    <input type="radio" value="Php">Php
+                    <input type="radio" value="Python">Python
+                    <input type="radio" value="Java">Java
+                    <input type="radio" value="Digital Marketing">Digital Marketing
+                    </div>
+                    </div>
+
+                    <div class="submit">
+                    <input type="submit" value="Submit" align="center" >
+                    <input type="reset"  value="reset" align="center" >
+                    </div>
+                   
 
 
 
+
+                    </div>
+                    
+            </table>   
+            
 
 
         </form>
-
+        </div>
     </body>
 </html>
