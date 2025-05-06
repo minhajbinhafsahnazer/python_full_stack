@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="d-flex flex-column align-items-center">
+
+      <!-- UH Header -->
+      <header class="bg-black text-white py-3" style="width: 80%;">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Charity Heading -->
+            <h1 class="h3 m-0" style="margin-left: 100px;">CHARITY.</h1>
+    
+            <!-- Navigation Buttons -->
+            <nav>
+                <button class="btn btn text-white">Home</button>
+                <button class="btn btn text-white">About Us</button>
+                <button class="btn btn text-white">News</button>
+                <button class="btn btn text-white">Causes</button>
+    
+                <!-- Dropdown Button -->
+                <div class="dropdown d-inline">
+                    <button class="btn btn text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Page 1</a></li>
+                        <li><a class="dropdown-item" href="#">Page 2</a></li>
+                        <li><a class="dropdown-item" href="#">Page 3</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Yellow Donate Button -->
+                <button type="button" class="btn" style="background-color: yellow; color: black; margin-left: 20px;">Donate</button>
+               
+            </nav>
+        </div>
+    </header>
+    
+    
+
+
+
+      <!-- Image Section with Overlay -->
+      <div class="position-relative" style="width: 80%; height: calc(8 * 3rem); overflow: hidden;">
+        
+
+
+
+        <!-- Background Image -->
+        <img src="boy.jpg" alt="Descriptive Alt Text" class="img-fluid w-100 h-100 object-fit-cover">
+    
+        <!-- Overlayed Text -->
+        <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+          <div >
+            <h3 class="display-4 fw-bold">DONATE</h3>
+            <h6 class="text-light mt-3">TOGETHER WE CAN MAKE A DIFFERENCE</h6>
+            <button type="button" class="btn" style="background-color: yellow; color: black; ">Donate Now</button>
+          </div>
+        </div>
+
+        <!--BOTTOM LABEL -->
+        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 d-flex flex-column flex-md-row justify-content-center z-2">
+          <span class="bg-warning text-dark fw-bold px-3 py-2 m-1 rounded">Give Donation</span>
+          <span class="bg-warning text-dark fw-bold px-3 py-2 m-1 rounded">Become Volunteer</span>
+          <span class="bg-warning text-dark fw-bold px-3 py-2 m-1 rounded">Give Scholarship</span>
+        </div>
+      </div>
+
+      <!--Feature session of details-->
+     <!-- Features Section -->
+<section class="py-5 bg-white" style="width: 80%;">
+  <div class="container text-center">
+    <h2 class="mb-5 fw-bold">Most Popular Causes</h2>
+    <div class="row g-4">
+      
+      <!-- Feature Card 1 -->
+      <div class="col-md-4">
+        <div class="border rounded shadow p-3">
+          <img src="poor1.jpeg" alt="Cause 1" class="img-fluid rounded mb-3">
+          <div class="d-flex justify-content-between">
+            <span class="fw-semibold" style="margin-left: 50px;">Raised: ₹300</span>
+            <span class="fw-semibold" style="margin-right: 50px;">Goal: ₹3000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Card 2 -->
+      <div class="col-md-4">
+        <div class="border rounded shadow p-3">
+          <img src="poor2.jpeg" alt="Cause 2" class="img-fluid rounded mb-3">
+          <div class="d-flex justify-content-between">
+            <span class="fw-semibold" style="margin-left: 50px;">Raised: ₹300</span>
+            <span class="fw-semibold" style="margin-right: 50px;">Goal: ₹3000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature Card 3 -->
+      <div class="col-md-4">
+        <div class="border rounded shadow p-3">
+          <img src="poor3.jpeg" alt="Cause 3" class="img-fluid rounded mb-3">
+          <div class="d-flex justify-content-between">
+            <span class="fw-semibold" style="margin-left: 50px;">Raised: ₹300</span>
+            <span class="fw-semibold" style="margin-right: 50px;">Goal: ₹3000</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    
+
+      
+      
+      
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+<!-- HIGHLY RECOMEND https://www.w3schools.com/bootstrap/bootstrap_images.asp-->
+<!-- 💡 Explanation of Classes Used:
+container: Provides horizontal padding and centers content on larger screens.
+
+vh-100: Makes the container height 100% of the viewport height.
+
+d-flex, flex-column, justify-content-center, align-items-center: Centers content both vertically and horizontally using flexbox.
+
+text-center: Centers the text alignment.
+
+display-3, fw-bold: Makes the title large and bold.
+
+text-muted, mt-3: Styles the subtitle with a muted color and adds some top margin.-->
