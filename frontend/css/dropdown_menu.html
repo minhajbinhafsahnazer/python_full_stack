@@ -1,0 +1,76 @@
+<!-- 2. Design a custom dropdown menu using HTML and CSS. Ensure that it works seamlessly and 
+looks good on both desktop and mobile devices-->
+
+<!--3. Positions an inmage at the boom right corner of a contaier div using css\-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Dropdown</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    /* Hidden checkbox for toggle */
+    #menu-toggle {
+      display: none;
+    }
+
+    label {
+      display: block;
+      background-color: #444;
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .dropdown {
+      max-height: 0;
+      overflow: hidden;
+      background-color: #f1f1f1;
+      transition: max-height 0.3s ease;
+    }
+
+    #menu-toggle:checked + .dropdown {
+      max-height: 200px; /* adjust as needed */
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <label for="menu-toggle">Click Menu ▼</label>
+    <input type="checkbox" id="menu-toggle">
+    <div class="dropdown">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+
+  <div class="img">
+    <img src="boy.jpg" alt="Image" style="position: absolute; bottom: 0; right: 0; margin: 10px;">
+  </div>
+
+</body>
+</html>
