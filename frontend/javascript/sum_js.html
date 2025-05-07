@@ -1,0 +1,28 @@
+<!-- Write a function that takes an array of numbers as input and returns the sum
+ of all the numbers in the array.-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pattern JS</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 
+     <input type="text" id="num" placeholder="Enter a number">
+     <button onclick="sumArray()">Sum</button>
+     <p id="result"></p>
+ <script>
+     function sumArray(){
+         var num = document.getElementById("num").value.split(",").map(Number);
+         var sum = num.reduce((a, b) => a + b, 0);
+         document.getElementById("result").innerHTML = "Sum: " + sum;
+     }
+ </script>
+ 
+ 
+ 
+ 
+ </body>
+ </html>
