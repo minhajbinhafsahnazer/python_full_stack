@@ -1,0 +1,32 @@
+<!--Print the number pattern.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern JS</title>
+</head>
+<body>
+    <h1>Print Number Pattern</h1> 
+    <pre id="result"></pre>
+
+
+    <script>
+       let num = 1;
+       let result = "";
+
+         for (let row = 1; row <=5; row++) {
+            
+            for(let col =1; col <= row; col++){
+                
+                result += num + " ";
+                num ++
+                
+            }
+            result += "\n";
+         }
+            document.getElementById("result").innerText = result;
+         
+    </script>
+</body>
+</html>

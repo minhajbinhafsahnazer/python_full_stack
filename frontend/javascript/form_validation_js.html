@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>  LISTS  </title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function validateForm() {
+                const firstName = document.forms["myForm"]["firstName"].value;
+                const lastName = document.forms["myForm"]["lastName"].value;
+                const dob = document.forms["myForm"]["dob"].value;
+                const email = document.forms["myForm"]["email"].value;
+                const mobile = document.forms["myForm"]["mobile"].value;
+                const PIN = document.forms["myForm"]["PIN"].value;
+
+                const emailregex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const mobileRegex = /^\d{10}$/;
+                const pinRegex = /^\d{6}$/;
+
+                if (firstName == "" || lastName == "" || dob == "" || email == "" || mobile == "" || PIN == "") {
+                    alert("All fields must be filled out");
+                    return false;
+                }
+
+                if(!emailregex.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+                if(!mobileRegex.test(mobile)) {
+                    alert("Please enter a valid mobile number (10 digits).");
+                    return false;
+                }   
+                if(!pinRegex.test(PIN)) {
+                    alert("Please enter a valid PIN code (6 digits).");
+                    return false;
+                }
+                return true;
+            }
+                
+        </script>
+    </head>
+
+    <body style = "background-color: #153c4a;">
+        <div class="form-group">
+        <form>
+            <table>
+                    <tr>
+                        <div class="form-field">
+                        <label>FIRST NAME</label>
+                        <input  type="text" >
+                        </div>
+                       
+                    </tr>
+
+
+                    <br>
+                        <tr>
+                        <div class="form-field">
+                        <label>LAST NAME</label>
+                        <input type="text" >
+                        </div>
+                    </tr>
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">    
+                        <label>DATE OF BIRTH</label>
+                        <input type="date,month,year">
+                        </div>
+                    </tr>
+
+
+                    <br>
+
+
+                    <tr>
+                        <div class="form-field">
+                        <label>EMAIL ID</label>
+                        <input type="email">
+                        </div>
+                    </tr>
+
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">
+                        <label>MOBILE NUMBER</label>
+                        <input type="number">
+                        </div>
+                    </tr>
+                
+
+
+                    <br>
+                    <tr>
+                        <div class="form-field">
+                        <label>GENDER</label>
+                        <div class="radio-group">
+                        <input type="radio" name="r" value="male">M
+                        <input type="radio" name="r" value="female">F
+                        </div>
+                        </div>
+                    </tr>
+                
+
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">
+                        <label>ADDRESS</label>
+                        <input type="text" width="200" height="100">
+                        </div>
+                    </tr>
+
+
+                    <br>
+
+                    <div class="form-field">
+                    <label>CITY</label>
+                    <input type="text" >
+                    </div>
+
+
+                    <br>
+                    <tr>
+                        <div class="form-field">
+                        <label>PIN CODE</label>
+                        <input type="number" >
+                            </div>
+                    </tr>
+
+
+                    <br>
+
+                    <tr>
+                        <div class="form-field">
+                        <label>STATE</label>
+                        <input type="text" >
+                        </div>
+                    </tr>
+
+
+                    <br>
+                    
+                    <tr>
+                        <div class="form-field">
+                        <label for="country">COUNTRY</label>
+                        <select id="country" name="country">
+                            <option value="india">INDIA</option>
+                            <option value="uae">UAE</option>
+                            <option value="usa">USA</option>
+                            <option value="china">CHINA</option>
+                        </select>
+                        </div>
+                    </tr>
+
+
+                    <br>
+                    
+
+                    <tr>
+                        <div class="form-field">
+                        <label for="hobby1">HOBBIES</label>
+
+                        <div class="subhobies">
+                        <label for="hobby1">Drawing</label>
+                        <input type="checkbox" id="hobby1" name="hobbies" value="Drawing">
+
+                        <label for="hobby2">Singing</label>
+                        <input type="checkbox" id="hobby2" name="hobbies" value="Singing">
+                        
+                        <label for="hobby3">Dancing</label>
+                        <input type="checkbox" id="hobby3" name="hobbies" value="Dancing">
+                        
+                        <label for="hobby4">Sketching</label>
+                        <input type="checkbox" id="hobby4" name="hobbies" value="Sketching">
+                    
+                        <br>
+
+                        <label for="hobby5">Others</label>
+                        <input type="checkbox" id="hobby5" name="hobbies" value="Others">
+
+                        <input type="text" width = "100">
+                        </div>
+                        </div>
+                    </tr>
+                   
+
+
+                    <br>
+
+                    <table>
+
+                        <tr>
+                            <td colspan="2"><label>Qualifications</label></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <table border=2px >
+                                    <tr>
+                                        <th>Sl.No.</th>
+                                        <th>Examination</th>
+                                        <th>Board</th>
+                                        <th>Percentage</th>
+                                        <th>Year of Passing</th>
+                                    </tr>
+                                    <tr><td>1</td><td>Class X</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                    <tr><td>2</td><td>Class XII</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                    <tr><td>3</td><td>Graduation</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                    <tr><td>4</td><td>Masters</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td></tr>
+                                 </table>
+
+                               
+                            </td>
+                        </tr>
+
+                    </table>
+                    <br>
+                    <div class="form-field">
+                    <label class="dd">COURSES APPLIED FOR</label>
+
+                    <div class="radio-group">
+                    <input type="radio" value="Php">Php
+                    <input type="radio" value="Python">Python
+                    <input type="radio" value="Java">Java
+                    <input type="radio" value="Digital Marketing">Digital Marketing
+                    </div>
+                    </div>
+
+                    <div class="submit">
+                    <input type="submit" value="Submit" align="center" >
+                    <input type="reset"  value="reset" align="center" >
+                    </div>
+                   
+
+
+
+
+                    </div>
+                    
+            </table>   
+            
+
+
+        </form>
+        </div>
+
+        <script>
+            // JavaScript code to validate the form
+            document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Get form values
+                const firstName = document.querySelector('input[type="text"]').value;
+                const lastName = document.querySelectorAll('input[type="text"]')[1].value;
+                const dob = document.querySelector('input[type="date"]').value;
+                const email = document.querySelector('input[type="email"]').value;
+                const mobile = document.querySelector('input[type="number"]').value;
+        </script>>
+    </body>
+</html>
