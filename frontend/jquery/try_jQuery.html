@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Try jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+        <script>
+        $(document).ready(function() {
+        $("button").click(function() {
+            $("p").toggle(3000, function() {
+                alert("The paragraph is now toggled.");
+            });
+        });
+        });
+         </script>
+    </head> 
+
+
+
+<body>
+  
+    <p>welcome</p>
+    <button >toggle click</button>
+    
+</body>
+</html>
+
+
+
+
+
+
+<!-- $(document).ready(function() {ensures that the code inside the ready() function only runs after the HTML document has been completely loaded -->
+<!--click event for all buttons    $("button").click(function() { -->
+<!--$(document).ready(function() {
+            $("button").click(function() {
+                $("p").hide();
+            });
+        });-->
+
+<!-- <script>
+        $(document).ready(function() {
+            $("#d").mouseenter(function() {
+                alert("You entered.....");
+            });
+        });
+         </script>
+    </head> 
+<body>
+    <div id="d" style="width: 200px; height: 100px; background-color: lightblue;">
+        Hover over me!
+    </div>-->
+
+
+
+<!-- $(document).ready(function() {
+            $("#d").mouseleave(function() {
+                alert("You leaved.....");
+            });
+        });-->
+
+<!-- <script>
+        $(document).ready(function() {
+            $("#d").hover(function() {
+                alert("You are on the space....");
+            });
+        });
+         </script>-->
+
+
+<!--<script>
+        $(document).ready(function() {
+        $("input").focus(function() {
+            $(this).css("background-color", "yellow");
+            });
+        $("input").blur(function() {
+            $(this).css("background-color", "lightblue");
+            });
+        });
+         </script>
+    </head> 
+
+
+
+<body>
+    <input type="text" placeholder="Focus on me!">-->
+
+
+
+<!--<script>
+        $(document).ready(function() {
+        $("#h").click(function() {
+            $("p").hide(1000,function() {
+                alert("The paragraph is now hidden.");
+            });
+            });
+        $("#s").click(function() {
+            $("p").show("slow",function() {
+                alert("The paragraph is now visible.");
+            });
+            });
+        });
+         </script>
+    </head> 
+
+
+
+<body>
+  
+    <p>welcome</p>
+    <button id="h">Click me to hide</button>
+    <button id="s">Click me to hide</button>-->
+
+<!--<script>
+        $(document).ready(function() {
+        $("button").click(function() {
+            $("p").toggle(3000, function() {
+                alert("The paragraph is now toggled.");
+            });
+        });
+        });
+         </script>-->
