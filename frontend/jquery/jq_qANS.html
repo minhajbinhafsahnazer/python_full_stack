@@ -9,16 +9,37 @@
 
 
         <script>
+        $(document).ready(function() {
+
+            let isHidden = false;
+
+            $("button").click(function() {
+
+                if(!isHidden) {
+                $(this).css("background-color", "red");
+                $("p").hide(800, function() {       
+                });
+                 }
+                else {
+                    $(this).css("background-color", "green");
+                    $("p").show(800, function() {        
+                    });
+                }
+                isHidden = !isHidden;        
+                });
+            });
         
-         </script>
+    </script>
     </head> 
+
 
 
 
 <body>
   
-    <p>welcome</p>
-    <button >toggle click</button>
+    <p>text</p>
+    <button id="1" name="hide">click to turn red and hide content</button><br>
+    <button id="2" name="unhide">click to turn green and show</button>
     
 </body>
 </html>
